@@ -1,0 +1,793 @@
+{
+  "Version": 76,
+  "Individuals": [
+    {
+      "Name": "Adult",
+      "Seed": 945750,
+      "OriginData": {
+        "CalculationMethods": [
+          "SurfaceAreaPlsInt_VAR1",
+          "Body surface area - Mosteller"
+        ],
+        "Species": "Human",
+        "Population": "European_ICRP_2002",
+        "Gender": "MALE",
+        "Age": {
+          "Value": 30.0,
+          "Unit": "year(s)"
+        }
+      },
+      "Molecules": [
+        {
+          "Name": "CYP2C19",
+          "Type": "Enzyme",
+          "MembraneLocation": "Apical",
+          "TissueLocation": "Intracellular",
+          "IntracellularVascularEndoLocation": "Endosomal",
+          "Expression": [
+            {
+              "Name": "Brain",
+              "Value": 0.00014961101137
+            },
+            {
+              "Name": "Gonads",
+              "Value": 0.0003526545268
+            },
+            {
+              "Name": "Kidney",
+              "Value": 0.00015816021202
+            },
+            {
+              "Name": "Periportal",
+              "Value": 1.0
+            },
+            {
+              "Name": "Pericentral",
+              "Value": 1.0
+            },
+            {
+              "Name": "Lung",
+              "Value": 0.00040608703086
+            },
+            {
+              "Name": "SmallIntestine",
+              "Value": 0.3238009746
+            },
+            {
+              "Name": "Duodenum",
+              "Value": 0.3238009746
+            },
+            {
+              "Name": "UpperJejunum",
+              "Value": 0.3238009746
+            },
+            {
+              "Name": "LowerJejunum",
+              "Value": 0.3238009746
+            },
+            {
+              "Name": "UpperIleum",
+              "Value": 0.3238009746
+            },
+            {
+              "Name": "LowerIleum",
+              "Value": 0.3238009746
+            }
+          ],
+          "Ontogeny": {
+            "Name": "CYP2C19"
+          }
+        },
+        {
+          "Name": "CYP3A4",
+          "Type": "Enzyme",
+          "MembraneLocation": "Apical",
+          "TissueLocation": "Intracellular",
+          "IntracellularVascularEndoLocation": "Endosomal",
+          "Expression": [
+            {
+              "Name": "Brain",
+              "Value": 0.0041682898325
+            },
+            {
+              "Name": "Gonads",
+              "Value": 0.00078691079081
+            },
+            {
+              "Name": "Kidney",
+              "Value": 0.0053603428126
+            },
+            {
+              "Name": "Periportal",
+              "Value": 1.0
+            },
+            {
+              "Name": "Pericentral",
+              "Value": 1.0
+            },
+            {
+              "Name": "Lung",
+              "Value": 0.00042695753798
+            },
+            {
+              "Name": "SmallIntestine",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "Duodenum",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "UpperJejunum",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "LowerJejunum",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "UpperIleum",
+              "Value": 0.0727697702
+            },
+            {
+              "Name": "LowerIleum",
+              "Value": 0.0727697702
+            }
+          ],
+          "Ontogeny": {
+            "Name": "CYP3A4"
+          }
+        }
+      ]
+    }
+  ],
+  "Compounds": [
+    {
+      "Name": "Lansoprazole",
+      "IsSmallMolecule": true,
+      "PlasmaProteinBindingPartner": "Albumin",
+      "Lipophilicity": [
+        {
+          "Name": "Measurement",
+          "Parameters": [
+            {
+              "Name": "Lipophilicity",
+              "Value": 1.0,
+              "Unit": "Log Units"
+            }
+          ]
+        }
+      ],
+      "FractionUnbound": [
+        {
+          "Name": "Measurement",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "Fraction unbound (plasma, reference value)",
+              "Value": 0.03
+            }
+          ]
+        }
+      ],
+      "Solubility": [
+        {
+          "Name": "Measurement",
+          "Parameters": [
+            {
+              "Name": "Solubility at reference pH",
+              "Value": 0.97,
+              "Unit": "mg/l"
+            },
+            {
+              "Name": "Reference pH",
+              "Value": 7.0
+            }
+          ]
+        }
+      ],
+      "PkaTypes": [
+        {
+          "Type": "Acid",
+          "Pka": 8.84,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Type": "Base",
+          "Pka": 4.15,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "Processes": [
+        {
+          "InternalName": "MetabolizationIntrinsic_FirstOrder",
+          "DataSource": "CYP2C19",
+          "Species": "Human",
+          "Molecule": "CYP2C19",
+          "Parameters": [
+            {
+              "Name": "Intrinsic clearance",
+              "Value": 0.0,
+              "Unit": "l/min"
+            },
+            {
+              "Name": "Specific clearance",
+              "Value": 5.09,
+              "Unit": "1/min",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "InternalName": "MetabolizationIntrinsic_FirstOrder",
+          "DataSource": "CYP3A4",
+          "Species": "Human",
+          "Molecule": "CYP3A4",
+          "Parameters": [
+            {
+              "Name": "Intrinsic clearance",
+              "Value": 0.0,
+              "Unit": "l/min"
+            },
+            {
+              "Name": "Specific clearance",
+              "Value": 0.5,
+              "Unit": "1/min",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        }
+      ],
+      "CalculationMethods": [
+        "Cellular partition coefficient method - PK-Sim Standard",
+        "Cellular permeability - PK-Sim Standard"
+      ],
+      "Parameters": [
+        {
+          "Name": "F",
+          "Value": 3.0,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Name": "Molecular weight",
+          "Value": 369.36,
+          "Unit": "g/mol"
+        }
+      ]
+    }
+  ],
+  "Formulations": [
+    {
+      "Name": "PO_Weibull",
+      "FormulationType": "Formulation_Tablet_Weibull",
+      "Parameters": [
+        {
+          "Name": "Dissolution time (50% dissolved)",
+          "Value": 61.0,
+          "Unit": "min"
+        },
+        {
+          "Name": "Lag time",
+          "Value": 5.0,
+          "Unit": "min"
+        },
+        {
+          "Name": "Dissolution shape",
+          "Value": 1.0
+        },
+        {
+          "Name": "Use as suspension",
+          "Value": 0.0
+        }
+      ]
+    }
+  ],
+  "Protocols": [
+    {
+      "Name": "PO_15mg",
+      "ApplicationType": "Oral",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "InputDose",
+          "Value": 15.0,
+          "Unit": "mg"
+        }
+      ]
+    }
+  ],
+  "Simulations": [
+    {
+      "Name": "POsim-Adult-15mg",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Amer-etal-2004-Adult-PO-obs.PO-capsule-15mg",
+        "Hussein_etal_1993_Adult_PO_obs.PO15mg",
+        "Gerloff_etal_1996_adult_obs.PO15mg"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 12.5,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|PO_15mg|PO_Weibull|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Lansoprazole|Intestinal permeability (transcellular)",
+          "Value": 1.0,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Lansoprazole|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Adult",
+      "Compounds": [
+        {
+          "Name": "Lansoprazole",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Processes": [
+            {
+              "Name": "CYP2C19-CYP2C19",
+              "MoleculeName": "CYP2C19"
+            },
+            {
+              "Name": "CYP3A4-CYP3A4",
+              "MoleculeName": "CYP3A4"
+            }
+          ],
+          "Protocol": {
+            "Name": "PO_15mg",
+            "Formulations": [
+              {
+                "Name": "PO_Weibull",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "POsim-Adult-15mg-Lansoprazole-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "POsim-Adult-15mg|Organism|PeripheralVenousBlood|Lansoprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Amer-etal-2004-Adult-PO-obs.PO-capsule-15mg-Lansoprazole-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Amer-etal-2004-Adult-PO-obs.PO-capsule-15mg|Time ",
+              "Y": "Amer-etal-2004-Adult-PO-obs.PO-capsule-15mg|ObservedData|Peripheral Venous Blood|Plasma|Lansoprazole|Conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Hussein_etal_1993_Adult_PO_obs.PO15mg-Lansoprazole-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Hussein_etal_1993_Adult_PO_obs.PO15mg|Time ",
+              "Y": "Hussein_etal_1993_Adult_PO_obs.PO15mg|ObservedData|Peripheral Venous Blood|Plasma|Lansoprazole|Conc ",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Gerloff_etal_1996_adult_obs.PO15mg-Lansoprazole-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Gerloff_etal_1996_adult_obs.PO15mg|Time ",
+              "Y": "Gerloff_etal_1996_adult_obs.PO15mg|ObservedData|Peripheral Venous Blood|Plasma|Lansoprazole|Conc ",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "BottomInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Undefined\nPOsim-Adult-15mg\n2020-05-23 22:32"
+        }
+      ]
+    }
+  ],
+  "ObservedData": [
+    {
+      "Name": "Amer-etal-2004-Adult-PO-obs.PO-capsule-15mg",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\Lansoprazole\\Observed_data\\Amer-etal-2004-Adult-PO-obs.xlsx.PO-capsule-15mg"
+        },
+        {
+          "Name": "File",
+          "Value": "Amer-etal-2004-Adult-PO-obs"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "PO-capsule-15mg"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Lansoprazole"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Name": "Conc ",
+            "Path": "Amer-etal-2004-Adult-PO-obs.PO-capsule-15mg|ObservedData|Peripheral Venous Blood|Plasma|Lansoprazole|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2018-05-17T21:34:33.1198415-04:00",
+            "Source": "Amer-etal-2004-Adult-PO-obs.PO-capsule-15mg.Conc [ng/mL]",
+            "MolWeight": 369.361
+          },
+          "Values": [
+            0.001399689,
+            0.0230948683,
+            0.305832028,
+            0.420606554,
+            0.400311053,
+            0.3317263,
+            0.278538138,
+            0.170762047,
+            0.1070762,
+            0.07138414,
+            0.04059098,
+            0.0230948683,
+            0.018895803
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "Amer-etal-2004-Adult-PO-obs.PO-capsule-15mg|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2018-05-17T21:34:33.1198415-04:00",
+          "Source": "Amer-etal-2004-Adult-PO-obs.PO-capsule-15mg.Time [h]"
+        },
+        "Values": [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Gerloff_etal_1996_adult_obs.PO15mg",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\Lansoprazole\\Gerloff_etal_1996_adult_obs.xlsx.PO15mg"
+        },
+        {
+          "Name": "File",
+          "Value": "Gerloff_etal_1996_adult_obs"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "PO15mg"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Lansoprazole"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Name": "Conc ",
+            "Path": "Gerloff_etal_1996_adult_obs.PO15mg|ObservedData|Peripheral Venous Blood|Plasma|Lansoprazole|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2018-05-15T12:47:10.1324997-04:00",
+            "Source": "Gerloff_etal_1996_adult_obs.PO15mg.Conc [ng/ml]",
+            "MolWeight": 369.361
+          },
+          "Values": [
+            0.00195531757,
+            0.05024335,
+            0.0992929339,
+            0.126834,
+            0.172698334,
+            0.1802097,
+            0.15860182,
+            0.141078457,
+            0.114027813,
+            0.100355424,
+            0.0846410245,
+            0.0621625073,
+            0.0442189723,
+            0.02385085,
+            0.0128646819,
+            0.004075393,
+            0.002040362
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "Gerloff_etal_1996_adult_obs.PO15mg|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2018-05-15T12:47:10.1324997-04:00",
+          "Source": "Gerloff_etal_1996_adult_obs.PO15mg.Time [h]"
+        },
+        "Values": [
+          0.28,
+          0.5,
+          0.75,
+          1.0,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75,
+          3.0,
+          3.5,
+          4.0,
+          5.0,
+          6.0,
+          8.0,
+          10.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Hussein_etal_1993_Adult_PO_obs.PO15mg",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Egnyte\\Private\\esther.yun\\Lansoprazole\\Hussein_etal_1993_Adult_PO_obs.xlsx.PO15mg"
+        },
+        {
+          "Name": "File",
+          "Value": "Hussein_etal_1993_Adult_PO_obs"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "PO15mg"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Lansoprazole"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Name": "Conc ",
+            "Path": "Hussein_etal_1993_Adult_PO_obs.PO15mg|ObservedData|Peripheral Venous Blood|Plasma|Lansoprazole|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2018-05-15T16:22:31.8448669-04:00",
+            "Source": "Hussein_etal_1993_Adult_PO_obs.PO15mg.Conc [ng/mL]",
+            "MolWeight": 369.361
+          },
+          "Values": [
+            0.0009999999,
+            0.06819316,
+            0.2420266,
+            0.3225206,
+            0.263352782,
+            0.218702272,
+            0.1816221,
+            0.148302734,
+            0.08785476,
+            0.05857687,
+            0.03411987,
+            0.0159563646,
+            0.00697462354
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Name": "Time ",
+          "Path": "Hussein_etal_1993_Adult_PO_obs.PO15mg|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2018-05-15T16:22:31.8448669-04:00",
+          "Source": "Hussein_etal_1993_Adult_PO_obs.PO15mg.Time [h]"
+        },
+        "Values": [
+          0.3,
+          0.5,
+          0.8,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          8.0,
+          10.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    }
+  ]
+}
